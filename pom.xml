@@ -5,12 +5,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>my.suveng</groupId>
-    <artifactId>user_center</artifactId>
+    <artifactId>sys_user</artifactId>
     <version>1.0.0</version>
 
+    <packaging>jar</packaging>
+
+    <properties>
+        <spring.version>5.1.4.RELEASE</spring.version>
+        <springboot.version>2.1.2.RELEASE</springboot.version>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    </properties>
 
     <dependencies>
-<!--        引入springboot-->
+        <!-- web依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--        引入springboot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -24,10 +41,7 @@
         </dependency>
     </dependencies>
 
-    <properties>
-        <spring.version>5.1.4.RELEASE</spring.version>
-        <springboot.version>2.1.2.RELEASE</springboot.version>
-    </properties>
+
 
     <dependencyManagement>
         <dependencies>
