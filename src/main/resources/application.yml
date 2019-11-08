@@ -1,0 +1,10 @@
+server:
+  port: 80
+spring:
+  application:
+    name: user
+  data:
+    mongodb:
+      database: sys
+      host: 192.168.0.200
+      

@@ -14,7 +14,10 @@
 
 - mysql5.7
 - redis4
-- mongodb4
- 
+- mongodb
+- hutool
+- lombok
+- spring data mongodb
+
 
 
